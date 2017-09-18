@@ -882,14 +882,14 @@ END_TEST
 Suite *get_suite(void) {
   Suite *s = suite_create("elemwise");
   TCase *tc = tcase_create("contig");
-  tcase_set_timeout(tc, 8.0);
+  tcase_set_timeout(tc, 80.0);
   tcase_add_checked_fixture(tc, setup, teardown);
   tcase_add_test(tc, test_contig_simple);
   tcase_add_test(tc, test_contig_f16);
   tcase_add_test(tc, test_contig_0);
   suite_add_tcase(s, tc);
   tc = tcase_create("basic");
-  tcase_set_timeout(tc, 8.0);
+  tcase_set_timeout(tc, 80.0);
   tcase_add_checked_fixture(tc, setup, teardown);
   tcase_add_test(tc, test_basic_simple);
   tcase_add_test(tc, test_basic_f16);

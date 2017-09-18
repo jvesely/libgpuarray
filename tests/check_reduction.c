@@ -434,7 +434,7 @@ Suite *get_suite(void) {
 	Suite *s  = suite_create("reduction");
 	TCase *tc = tcase_create("basic");
 	tcase_add_checked_fixture(tc, setup, teardown);
-	tcase_set_timeout(tc, 15.0);
+	tcase_set_timeout(tc, 60.0);
 
 	tcase_add_test(tc, test_reduction);
 	tcase_add_test(tc, test_idxtranspose);

@@ -295,7 +295,7 @@ Suite *get_suite(void) {
   Suite *s = suite_create("array");
   TCase *tc = tcase_create("take1");
   tcase_add_checked_fixture(tc, setup, teardown);
-  tcase_set_timeout(tc, 8.0);
+  tcase_set_timeout(tc, 30.0);
   tcase_add_test(tc, test_take1_ok);
   tcase_add_test(tc, test_take1_offset);
   tcase_add_test(tc, test_reshape_0);
